@@ -27,9 +27,10 @@ namespace TestProject._3Controller
             
             rows[0].Align();
             rows[0].Resize(500,EdgeType.Width);
+            rows[0].DrawImage();
             if(needToSave)
             {
-                rows[0].DrawImage().Save(filePath);
+                rows[0].SaveImage(filePath);
             }
             return rows[0].BitmapImage;
         }
