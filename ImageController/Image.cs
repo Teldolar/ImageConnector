@@ -1,34 +1,34 @@
 ﻿using System.Drawing;
 
-namespace TestProject._3Controller
+namespace TestProject.ImageController
 {
     public class Image : Frame
     {
-        public Image(string filePath)
+        public Image(Bitmap image)
         {
-            BitmapImage = (Bitmap)System.Drawing.Image.FromFile(filePath);
+            BitmapImage = image;
             Width = BitmapImage.Width;
             Height = BitmapImage.Height;
         }
-        
+
         public override void Resize(double value, EdgeType edgeType)
         {
             switch (edgeType)
             {
                 case EdgeType.Height:
-                {
-                    Width *= value / Height;
-                    Height = value;
-                    BitmapImage = new Bitmap(BitmapImage, (int)Width, (int)value);
-                    break;
-                }
+                    {
+                        Width *= value / Height;
+                        Height = value;
+                        BitmapImage = new Bitmap(BitmapImage, (int)Width, (int)value);
+                        break;
+                    }
                 case EdgeType.Width:
-                {
-                    Height *= value / Width;
-                    Width = value;
-                    BitmapImage = new Bitmap(BitmapImage, (int)Width, (int)Height);
-                    break;
-                }
+                    {
+                        Height *= value / Width;
+                        Width = value;
+                        BitmapImage = new Bitmap(BitmapImage, (int)Width, (int)Height);
+                        break;
+                    }
             }
         }
 

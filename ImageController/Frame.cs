@@ -1,9 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Drawing;
-using System.Linq;
 
-namespace TestProject._3Controller
+namespace TestProject.ImageController
 {
     /// <summary>
     /// Базовый класс для всех возможных фреймов (строки, колонки, изображения)
@@ -16,12 +14,12 @@ namespace TestProject._3Controller
         public Bitmap BitmapImage;
         public double Width { get; set; }
         public double Height { get; set; }
-        
+
         /// <summary>
         /// Список дочерних фреймов
         /// </summary>
         protected readonly List<Frame> ChildFrames = new();
-        
+
         /// <summary>
         /// Метод добавляющий дочерний фрейм в конец списка, и возвращающий текущий фрейм
         /// </summary>
@@ -32,7 +30,7 @@ namespace TestProject._3Controller
             ChildFrames.Add(field);
             return this;
         }
-        
+
         /// <summary>
         /// Метод для сохранения получившегося изображения в файл
         /// </summary>
@@ -41,7 +39,7 @@ namespace TestProject._3Controller
         {
             DrawImage().Save(filePath);
         }
-        
+
         /// <summary>
         /// Метод для масштабирования выровненного фрейма
         /// </summary>
@@ -59,8 +57,8 @@ namespace TestProject._3Controller
         /// </summary>
         /// <returns>Возвращает получившееся изображение</returns>
         public abstract Bitmap DrawImage();
-        
-        
+
+
     }
 
     public enum EdgeType
