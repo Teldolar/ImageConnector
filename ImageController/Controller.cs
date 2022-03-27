@@ -18,17 +18,14 @@ namespace TestProject.ImageController
         /// Метод возвращающий дерево изображений
         /// </summary>
         /// <returns>Первая строка</returns>
-        public static Frame GerTree()
+        public static Frame GerTree(int width)
         {
             Rows.RemoveRange(0, Rows.Count);
             Cols.RemoveRange(0, Cols.Count);
             Rows.Add(new Row());
-            foreach (var image in _images)
+            foreach (var image in _images.Where(image => image.Width / image.Height > 100 || image.Height / image.Width > 100))
             {
-                if (image.Width / image.Height > 100 || image.Height / image.Width > 100)
-                {
-                    CompressionRatio = 5;
-                }
+                CompressionRatio = 5;
             }
             AddCol(Rows[0]);
             Rows[0].Align();

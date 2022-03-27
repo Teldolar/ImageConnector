@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "oEUu105nq0ad8sN+7JMiMD5tVTE2k2be1b2CvQMH3RUYIL8cGg7d+UFYQA8GU4AzTEVVx0hyvmZ6T5kynJG5Pw==",
+  "dgSpecHash": "iOcwAJrc+VCrYRK/hr7TqdYnjuOVZKfdBT0B2us/w42w/ETM7krPr5UGGPcvdDFQHq8ZV62im9nrGoyIUY77CQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\artur\\Desktop\\TestProject\\TestProject\\TestProject.csproj",
+  "projectFilePath": "C:\\Users\\artur\\RiderProjects\\ImageConnector\\TestProject.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

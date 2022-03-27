@@ -13,18 +13,18 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\artur\\Desktop\\TestProject\\TestProject\\TestProject.csproj",
+      "projectUniqueName": "C:\\Users\\artur\\RiderProjects\\ImageConnector\\TestProject.csproj",
       "projectName": "TestProject",
-      "projectPath": "C:\\Users\\artur\\Desktop\\TestProject\\TestProject\\TestProject.csproj",
+      "projectPath": "C:\\Users\\artur\\RiderProjects\\ImageConnector\\TestProject.csproj",
       "packagesPath": "C:\\Users\\artur\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\artur\\Desktop\\TestProject\\TestProject\\obj\\",
+      "outputPath": "C:\\Users\\artur\\RiderProjects\\ImageConnector\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\artur\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
-        "net5.0-windows7.0"
+        "net5.0-windows"
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},

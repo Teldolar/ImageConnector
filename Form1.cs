@@ -29,10 +29,11 @@ namespace TestProject
 
         private void ShowImage_Click(object sender, EventArgs e)
         {
-            var Tree = Controller.GerTree();
-            Size = new Size(Tree.BitmapImage.Width + 40, Tree.BitmapImage.Height + 63);
-            pictureBox1.Size = new Size(Tree.BitmapImage.Width, Tree.BitmapImage.Height);
-            pictureBox1.Image = Tree.BitmapImage;
+            //Здесь задается ширина
+            var tree = Controller.GerTree(500);
+            Size = new Size(tree.BitmapImage.Width + 40, tree.BitmapImage.Height + 63);
+            pictureBox1.Size = new Size(tree.BitmapImage.Width, tree.BitmapImage.Height);
+            pictureBox1.Image = tree.BitmapImage;
         }
     }
 }
